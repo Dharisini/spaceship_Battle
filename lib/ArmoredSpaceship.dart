@@ -12,7 +12,6 @@ class ArmoredSpaceShip extends SpaceShip {
 
   @override
   double determineDamage(double baseDamage) {
-  
     Random random = Random();
     double percentage = Armorpower * random.nextDouble();
     return (1 - percentage) * baseDamage;

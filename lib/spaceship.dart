@@ -13,7 +13,7 @@ abstract class SpaceShip {
     if (another_ship.is_destroyed() || this.is_destroyed()) {
       return;
     }
-    health = (health - determineDamage(another_ship.firePower*1.0)) as int;
+    health = (health - determineDamage(another_ship.firePower * 1.0)).toInt();
   }
 
   double determineDamage(double baseDamage);
